@@ -1,1 +1,61 @@
 /* main.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+
+:root {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+  --primary-color: #172650;
+  --background-color: #e9ead6;
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--primary-color);
+  background-color: var(--background-color);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/**********/
+/* HEADER */
+/**********/
+
+nav {
+  margin: 1rem 0;
+  /*position: sticky;*/
+}
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.navigation li {
+  list-style-type: none;
+  margin-left: 1rem;
+}
+
+.navigation li:first-of-type {
+  /*background-color: red;*/
+  flex-grow: 1;
+  margin: 0;
+}
+
+.navigation a {
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+.navigation a:visited {
+  color: var(--primary-color);
+}
